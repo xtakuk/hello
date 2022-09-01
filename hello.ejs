@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hellow</title>
+</head>
+<body>
+    <h1>hellow world</h1>
+    <a href="/add" class="new-button">+ 新規作成</a>
+
+    <ul class="table-body">
+        <% test.forEach((test) => { %>
+          <li>
+            <div class="item-data">
+              <span class="id-column"><%= test.id %></span>
+              <span class="name-column"><%= test.name %></span>
+            </div>
+          </li>
+        <% }) %>
+      </ul>
+</body>
+</html>
